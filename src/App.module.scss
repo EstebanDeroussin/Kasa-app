@@ -1,0 +1,12 @@
+@import "../node_modules/modern-normalize/modern-normalize.css";
+@import "@fontsource/montserrat";
+
+html {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+}
+
+.app {
+    max-width: 1440px;
+    margin: 0, auto;
+}
