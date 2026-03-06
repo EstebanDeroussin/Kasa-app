@@ -6,8 +6,12 @@ const NavBar = () => {
             <div className="nav-container">
                 <img src="/logo/LOGO.png" alt="" />
                 <div className="links">
-                    <Link className="link" to="/">Acceuil</Link>
-                    <Link className="link" to="/about">A-Propos</Link>
+                    <Link className="link" to="/">
+                        Acceuil
+                    </Link>
+                    <Link className="link" to="/about">
+                        A-Propos
+                    </Link>
                 </div>
             </div>
         </nav>

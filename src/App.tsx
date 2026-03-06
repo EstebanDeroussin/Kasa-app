@@ -22,7 +22,7 @@ import css from "./App.module.scss"
 // }
 function App() {
     return (
-        <main className={{css.app}}>
+        <main className={css.app}>
             <NavBar />
             <Routes>
                 <Route path="/" element={<Home />} />

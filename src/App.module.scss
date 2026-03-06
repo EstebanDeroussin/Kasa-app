@@ -7,6 +7,6 @@ html {
 }
 
 .app {
-    max-width: 1440px;
-    margin: 0, auto;
+    margin: 0 auto;
+    padding-top: 68px; /* hauteur de la navbar fixe */
 }
