@@ -1,22 +1,25 @@
-import Banner from "../../components/Bannner/Banner";
+import { useNavigate } from "react-router-dom";
+import ANNONCES from "../../data/annonces";
+import ListingCard from "../../components/ListingCard/ListingCard";
 import styles from "./Home.module.scss";
-import { REASSURANCEDATA } from "../../data/reassuranceData";
-import Reassurance from "../../components/Reassurance/Reassurance";
 
-const home = () => {
+const Home = () => {
+    const navigate = useNavigate();
+
     return (
-        <div className={styles.main}>
-            <div className={styles.bannerContainer}>
-                <Banner img="/public/images/Banner/Banner.png" />
-                <div className={styles.bannerOverlay}></div>
-            </div>
-            <div className={styles.reassuranceContainer}>
-                {REASSURANCEDATA.map((item, i) => (
-                    <Reassurance key={i} item={item} />
+        <main className={styles.main}>
+            <section className={styles.grid}>
+                {ANNONCES.map((annonce) => (
+                    <ListingCard
+                        key={annonce.id}
+                        cover={annonce.cover}
+                        title={annonce.title}
+                        onClick={() => navigate(`/location/${annonce.id}`)}
+                    />
                 ))}
-            </div>
-        </div>
+            </section>
+        </main>
     );
 };
 
-export default home;
+export default Home;

@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -6,12 +6,23 @@ const NavBar = () => {
             <div className="nav-container">
                 <img src="/logo/LOGO.png" alt="" />
                 <div className="links">
-                    <Link className="link" to="/">
+                    <NavLink
+                        to="/"
+                        end
+                        className={({ isActive }) =>
+                            isActive ? "link link--active" : "link"
+                        }
+                    >
                         Acceuil
-                    </Link>
-                    <Link className="link" to="/about">
+                    </NavLink>
+                    <NavLink
+                        to="/about"
+                        className={({ isActive }) =>
+                            isActive ? "link link--active" : "link"
+                        }
+                    >
                         A-Propos
-                    </Link>
+                    </NavLink>
                 </div>
             </div>
         </nav>

@@ -28,3 +28,14 @@
     display: flex;
     gap: 57px;
 }
+
+.link {
+    color: #000000;
+    text-decoration: none;
+}
+
+.link--active {
+    color: #0066cc;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
