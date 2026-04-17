@@ -1,0 +1,79 @@
+.root {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    gap: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060;
+}
+
+.location {
+    margin: 0;
+    font-size: 18px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.hostAndRating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hostName {
+    margin: 0;
+    font-size: 18px;
+    text-align: right;
+}
+
+.hostPicture {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .root {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hostAndRating {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
