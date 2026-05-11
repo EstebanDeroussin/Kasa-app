@@ -21,7 +21,7 @@ const NavBar = () => {
                             isActive ? "link link--active" : "link"
                         }
                     >
-                        A-Propos
+                        A Propos
                     </NavLink>
                 </div>
             </div>

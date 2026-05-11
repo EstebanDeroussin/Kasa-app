@@ -1,7 +1,7 @@
 import Banner from "../../components/Bannner/Banner";
+import Collapse from "../../components/Collapse/Collapse";
 import styles from "./about.module.scss";
 import { REASSURANCEDATA } from "../../data/reassuranceData";
-import Reassurance from "../../components/Reassurance/Reassurance";
 
 const About = () => {
     return (
@@ -12,7 +12,9 @@ const About = () => {
             </div>
             <div className={styles.reassuranceContainer}>
                 {REASSURANCEDATA.map((item, i) => (
-                    <Reassurance key={i} item={item} />
+                    <Collapse key={i} variant="about" title={item.title}>
+                        <p>{item.description}</p>
+                    </Collapse>
                 ))}
             </div>
         </div>

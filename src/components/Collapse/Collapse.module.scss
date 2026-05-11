@@ -49,3 +49,54 @@
         margin: 0;
     }
 }
+
+/* Variante page À propos (ex-Reassurance) */
+.rootAbout {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headerAbout {
+    width: 100%;
+    background-color: #ff6060;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.titleAbout {
+    margin: 0;
+}
+
+.iconAbout {
+    flex-shrink: 0;
+    font-size: 30px;
+    transition: transform 0.3s ease;
+}
+
+.iconAboutOpen {
+    transform: rotate(180deg);
+}
+
+.iconAboutClosed {
+    transform: rotate(0deg);
+}
+
+.contentAbout {
+    color: black;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 0 15px;
+    background-color: transparent;
+
+    p {
+        margin: 0;
+    }
+}
